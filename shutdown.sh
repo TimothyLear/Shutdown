@@ -1,7 +1,7 @@
 #! /bin/sh
 
 ### BEGIN INIT INFO
-# Provides:          Shutdown.py
+# Provides:          shutdown.py
 # Required-Start:    $remote_fs $syslog
 # Required-Stop:     $remote_fs $syslog
 # Default-Start:     2 3 4 5
@@ -13,15 +13,15 @@
 # Carry out specific functions when asked to by the system
 case "$1" in
   start)
-    echo "Starting Shutdown.py"
+    echo "Starting shutdown.py"
     /usr/local/bin/Shutdown.py &
     ;;
   stop)
     echo "Stopping Shutdown.py"
-    pkill -f /usr/local/bin/listen-for-shutdown.py
+    pkill -f /usr/local/bin/shutdown.py
     ;;
   *)
-    echo "Usage: /etc/init.d/Shutdown.sh {start|stop}"
+    echo "Usage: /etc/init.d/shutdown.sh {start|stop}"
     exit 1
     ;;
 esac
