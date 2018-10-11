@@ -5,7 +5,7 @@
 ~Make script run on boot
     sudo mv shutdown.py /usr/local/bin/
 
-~Make executable    
+~Make executable            
     sudo chmod +x /usr/local/bin/shutdown.py
 
 ~Script to Start/Stop   
