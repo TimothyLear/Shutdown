@@ -9,32 +9,32 @@ Pull Down resistor connected to GPIO4,GND, and power supply 5v
     detects power outage and performs pi/shutdown/shutdown 
 
 
-Create Shutdown.py file with     
+Create listen-for-shutdown.py file with     
     
-    sudo shutdow.py
+    sudo listen-for-shutdow.py
 
 Make script run on boot
    
-    sudo mv shutdown.py /usr/local/bin/
+    sudo mv listen-for-shutdown.py /usr/local/bin/
 
 Make executable            
     
-    sudo chmod +x /usr/local/bin/shutdown.py
+    sudo chmod +x /usr/local/bin/listen-for-shutdown.py
 
 Script to Start/Stop   
  
-    sudo shutdown.sh
+    sudo listen-for-shutdown.sh
 
 Make script run on boot   
 
-    sudo mv shutdown.sh /etc/init.d/
+    sudo mv listen-for-shutdown.sh /etc/init.d/
 
 Make executable 
 
-    sudo chmod +x /etc/init.d/shutdown.sh
+    sudo chmod +x /etc/init.d/listen-forshutdown.sh
 
-    sudo update-rc.d shutdown.sh defaults
+    sudo update-rc.d listen-for-shutdown.sh defaults
 
 Terminal command to run manually 
 
-    sudo /etc/init.d/shutdown.sh start
+    sudo /etc/init.d/listen-for-shutdown.sh start
