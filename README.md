@@ -1,4 +1,4 @@
-#listen for Shutdown
+# Shutdown Button & Resistor Detect
 
 Momentary button connected to GPIO3 and GND
     
